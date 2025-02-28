@@ -1,0 +1,65 @@
+/* General Styles */
+body {
+    padding-top: 76px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 600px;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Card Hover Effects */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom Section Spacing */
+section {
+    padding: 80px 0;
+}
+
+/* Image Styles */
+.img-fluid {
+    border-radius: 8px;
+}
+
+/* Form Styles */
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+}
