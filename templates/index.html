@@ -4,16 +4,17 @@
 
 {% block content %}
 <!-- Hero Section -->
-<section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0'); background-size: cover; background-position: center;">
-    <div class="container h-100">
+<section class="hero-section position-relative" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0'); background-size: cover; background-position: center;">
+    <div class="container h-100 position-relative" style="z-index: 2;">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center text-light">
                 <h1 class="display-4 fw-bold">Your IT Talent Partner</h1>
                 <p class="lead">Connecting innovative companies with exceptional tech talent</p>
-                <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Get Started</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg position-relative">Get Started</a>
             </div>
         </div>
     </div>
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
 </section>
 
 <!-- About Section -->
