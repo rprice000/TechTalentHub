@@ -57,6 +57,16 @@ section {
     opacity: 1;
 }
 
+/* Alert Styles */
+.alert {
+    position: fixed;
+    top: 76px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    min-width: 300px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-section {
